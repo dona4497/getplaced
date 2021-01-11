@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form-v1 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" name="registerForm" action="sreg.php" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>01</span></p>
+			            	<span class="step-text">Peronal Infomation</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Peronal Infomation</h3>
+									<p>Please enter your infomation and proceed to the next step.  </p>
+								</div>
+																<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Student college Id</legend>
+											<input type="text" class="form-control" id="sid"  name="sid" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>First Name</legend>
+											<input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name" pattern="[A-Za-z\s]{3,40}" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Last Name</legend>
+											<input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name" required>
+										</fieldset>
+									</div>
+								</div>
+
+
+                               <div class="form-row">
+									<div style="font-size: 11px;font-weight: 700;color: #999;width: 100%;position:relative;">
+										<fieldset style="border:  2px solid #e5e5e5; border-radius: 4px;	padding: 11px 20px;margin: 0 10px;">
+
+										
+											<legend>Gender</legend>
+											<input type="radio" name="gender"  value="Male">MALE<br>
+										
+											<input type="radio" name="gender" value="Female">FEMALE<br>
+											<!--input type="radio" name="gender" value="oth">OTHERS<br-->
+
+
+										</fieldset>
+									</div>
+
+								</div><br>
+
+
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Your Email</legend>
+											<input type="text" name="email" id="email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="example@email.com" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Phone Number</legend>
+											<input type="text" class="form-control" id="phone" name="phone" pattern="((0/91)?[7-9][0-9]{9})" placeholder="+91 8889997777" maxlength="10" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Date of Birth</legend>
+											<input type="date" class="form-control" id="dob" name="dob" placeholder="dd/mm/yyyy" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+										<legend>address</legend>
+										<input type="text" class="form-control" id="hname" name="hname" placeholder="HOUSE NAME" required>
+										<input type="text" class="form-control" id="place" name="place" placeholder="PLACE" required>
+										<input type="text" class="form-control" id="dist" name="dist" placeholder="DISTRICT" required>
+										<input type="text" class="form-control" id="pin" name="pin" placeholder="PIN" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<p class="step-icon"><span>02</span></p>
+			            	<span class="step-text">Academic Details</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Academic Details</h3>
+									
+								</div>
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										
+											<legend>Course</legend>
+											<select name="course" class="form-control">
+												<option value="mca">MCA</option>
+												<!--option value="mba">MBA</option-->
+												<option value="btech">MTECH</option>
+												<option value="mtech">BTECH</option>
+												
+							              </select>
+										
+									</div>
+								</div>
+
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										
+											<legend>Stream</legend>
+											<select name="stream" class="form-control">
+												<option value="mca">CA</option>
+												<option value="btech">CSE</option>
+												<option value="btech">CIVIL</option>
+												<option value="btech">MECHANICAL</option>
+												<option value="mtech">EC</option>
+												
+							              </select>
+										
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>PG</legend>
+											<input type="text" name="pper" placeholder="percentage/CGPA(Only for pg students)" class="form-control"> 
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Degree</legend>
+											<input type="text" class="form-control"  name="gper" placeholder="percentage/CGPA" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Plus Two</legend>
+											<input type="text" name="ptper"  class="form-control" placeholder="percentage/CGPA" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>10th</legend>
+											<input type="text" name="tenper"  class="form-control" placeholder="percentage/CGPA" required>
+										</fieldset>
+									</div>
+								</div>
+								
+								
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>03</span></p>
+			            	<span class="step-text">Set Password</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Set Your Password</h3>
+									
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Username</legend>
+											<input type="text" name="uname"  class="form-control" placeholder="Username" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Password</legend>
+											<input type="password" name="pass"  class="form-control" placeholder="password" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Re-enter Password</legend>
+											<input type="password" name="rpass"  class="form-control" placeholder="Re-enter password" required>
+										</fieldset>
+									</div>
+								</div>
+								
+																<div class="form-row">
+									<div class="form-holder form-holder-2">
+										
+											<legend>Choose Your Security Question</legend>
+											<select name="sqn" class="form-control">
+												<option value="Your Petname">Your Petname?</option>
+												<option value="Your First Teacher">Your First Teacher?</option>
+												<option value="Favorate superhero"> Favorate Superhero?</option>
+												
+												</select>
+										
+									</div>
+								</div>
+				                 <div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Your Answer</legend>
+											<input type="text" class="form-control"  name="ans"  required>
+										</fieldset>
+									</div>
+								</div>
+								
+							</div>
+			            </section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+		<script>
+		function submitForm(){
+
+
+			var name =  
+                document.forms["registerForm"]["first-name"];
+            var name1 =  
+                    document.forms["registerForm"]["last-name"];
+            var c1 =  
+                    document.forms["registerForm"]["gper"];
+            var c2 =  
+                    document.forms["registerForm"]["ptper"];
+            var c3 =  
+                    document.forms["registerForm"]["tenper"];
+            var p1 =  
+                    document.forms["registerForm"]["pass"];
+            var p2 =  
+                    document.forms["registerForm"]["rpass"];
+            var u =  
+                    document.forms["registerForm"]["uname"];
+            var id =  
+                    document.forms["registerForm"]["sid"];
+            //var mobile = document.getElementById('phone');s
+             
+            var mobile=    
+                   document.forms["registerForm"]["phone"];   
+
+                   if (id.value == "") { 
+                    	window.alert("Please enter your Id."); 
+                    	id.focus(); 
+                   	    return false; 
+
+                }
+
+ 					if (name.value == "") { 
+                    	window.alert("Please enter your First Name."); 
+                    	name.focus(); 
+                   	    return false; 
+
+                }
+
+
+                	 if (!name.value.match(/^[a-zA-Z]+$/)) 
+    					{
+        					window.alert('Only alphabets are allowed for Name');
+        					name.focus;
+        					return false;
+    			}
+
+                	if (name1.value == "") { 
+                    	window.alert("Please enter your Last Name."); 
+                    	name1.focus(); 
+                   	    return false; 
+
+                }
+                	if (!name1.value.match(/^[a-zA-Z]+$/)) 
+    					{
+        					window.alert('Only alphabets are allowed for Name');
+        					name1.focus;
+        					return false;
+    			}
+    				/*if(mobile.value.match(/^\d{10}$/)){
+       				
+      			  		window.alert("Please enter valid mobile number");
+      			  		mobile.focus(); 
+                   	    return false;
+    			}*/
+                	if(mobile.value.length!=10){
+      			  		window.alert("Please put valid 10 digit mobile number");
+      			  		mobile.focus(); 
+                   	    return false;
+    			}
+    					if (c1.value == ""|| c2.value == ""||c3.value == "") { 
+                    	window.alert("Please Fill Academic Details."); 
+                    	c1.focus(); 
+                   	    return false; 
+                } 
+    			
+                		if (u.value == "") { 
+                    	window.alert("Username is required."); 
+                    	u.focus(); 
+                   	    return false; 
+                } 
+                	if (p1.value == "") { 
+                    	window.alert("Please enter your Password."); 
+                    	p1.focus(); 
+                   	    return false; 
+                }
+					if (p2.value == "") { 
+                    	window.alert("Please re-enter your Password."); 
+                    	p2.focus(); 
+                   	    return false; 
+                }   
+                	if (p1.value!=p2.value) { 
+                    	window.alert("Check Password."); 
+                    	p2.focus(); 
+                   	    return false; 
+                }  
+
+			
+
+		document.registerForm.submit();
+		}
+	</script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

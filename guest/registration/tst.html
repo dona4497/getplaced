@@ -1,0 +1,106 @@
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Simple Online Quiz">
+    <meta name="author" content="Val Okafor">   
+    <title>Simple Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body role="document">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+        <div class="navbar-collapse collapse" class="toactive">
+          <ul class="nav navbar-nav" class="list-inline">
+            <li class="cli"><a href=>Home</a></li>
+           
+            <li class="cli"><a href=>Back</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+<style>
+</style>
+<div class="row">
+    <div class="col-md-offset-2 col-md-8">
+        <h1>Test Details</h1>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="question">Test Name</label>
+                <input type="text" class="form-control" id="question" name="tname" placeholder="Enter test name" Required>
+            </div>
+			 <div class="form-group">
+                <label for="question">Area</label>
+               <select name="area" class="form-control">
+					<option value=""><-SELECT-></option>
+					<option value="QUANTITATIVE APTITUDE">QUANTITATIVE APTITUDE</option>
+					<option value="PROGRAMING SKILS">PROGRAMING SKILS</option>
+					<option value="LOGICAL REASONING">LOGICAL REASONING</option>
+					<option value="VERBAL ABILITY">VERBAL ABILITY</option>
+												
+		       </select>
+            </div>
+			<div class="form-group">
+                <label for="qnno">NUMBER OF QUESTIONS</label>
+                <input type="text" name="qnno"  class="form-control" placeholder="material" required>
+				
+            </div>
+			
+			
+            <div class="form-group">
+                 <label for="question">Type</label>
+               <select name="type" class="form-control">
+					<option value=""><-SELECT-></option>
+					<option value="Test">TEST</option>
+					<option value="Training">TRAINING</option>
+					</select>
+					
+            </div>
+			
+     <h2>Set New Timer</h2>
+            
+                <label for="minute" >Minutes</label>
+                <input type="digit" class="form-control input-group-lg reg_name" name="min" placeholder="Min" Required>
+			
+             
+                <label for="second" >Seconds</label>
+                <input type="digit" class="form-control input-group-lg reg_name" name="sec" placeholder="Sec" Required>
+           
+			    <button type="submit" class="btn btn-primary btn-large" value="submit" name="timesubmit">+Set Timer</button>
+			
+            
+			
+                <button type="submit" class="btn btn-primary btn-large" value="submit" name="submit">+ Add Test Questions</button>
+
+        </form>
+    </div>
+	
+
+
+     </div>
+
+</html>
